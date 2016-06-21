@@ -1,0 +1,227 @@
+/*ESTILOS GENERALES*/
+
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow:hidden;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    background: #FFFFFF;
+}
+
+body a {
+    color: #6D6D6D;
+}
+
+body a:hover {
+    color: #6D6D6D;
+}
+
+/* FORMULARIO */
+
+.form {
+    width: 30%;
+    background: #FFFFFF;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+.form .avatar-form img {
+    width: 30%;
+    height: 30%;
+    padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.form .avatar-form {
+    float: center;
+}
+
+.form .form-final {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+}
+
+.footer-form {
+    text-align: center;
+}
+
+.header-form{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.header-form h1 {
+    font-weight: 100;
+}
+
+.header-form .footer-form {
+    color: #747474;
+}
+
+/* MENU */
+
+.sidebar {
+    width: 250px;
+    height: 100%;
+    position: absolute;
+    background: #FFFFFF;
+    font-weight: 500;
+    border-right: #00B16A;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    transition: all 0.3s;
+}
+
+.sidebar li:hover {
+    background: #FDE3A7;
+    border-left: 5px solid #E87E04;
+}
+
+.sidebar li span {
+    padding-left: 5px;
+    padding-right: 20px;
+}
+
+.sidebar a{
+    display: block;
+    color: #D35400;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.sidebar a:hover {
+    color: #D35400;
+}
+
+.sidebar .datos {
+    padding: 20px;
+}
+
+.sidebar .datos img {
+    width: 75%;
+}
+
+.sidebar p {
+    padding-top: 10px;
+}
+
+.contenido {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #eff1f0 url('http://i.imgur.com/OMotvGE.jpg')no-repeat;
+    padding: 30px;
+    transition: all 0.3s;
+    overflow: scroll;
+}
+
+.abrir {
+    transform: translateX(250px);
+}
+
+.sitio-principal {
+    margin: 0 auto;
+    width: 80%;
+    padding: 20px;
+    background-color: #eff1f0;
+}
+
+.img-principal {
+    width: 12%;
+    height: 12%;
+    padding: 15px;
+    float: left;
+}
+
+.img-principal img {
+    width: 100%;
+}
+
+.cuerpo-principal {
+    padding: 15px;
+}
+
+.img-prueba {
+    width: 15%;
+    padding: 20px;
+}
+
+.galeria {
+    width: 50%;
+}
+
+.form-galeria {
+    width: 50%;
+}
+
+.panel-principal {
+    width: 65%;
+    margin: 0 auto;
+}
+
+.formulario {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* TABLA */
+
+#markers_table {
+    background: #FFFFFF;
+}
+
+/* HEADER */
+
+.header {
+    width: 80%;
+    background: url("http://i.imgur.com/JQGAliT.png") no-repeat;
+    margin: 0 10%;
+}
+
+.header img {
+    width: 150px;
+}
+
+/* ESTILOS DEL PANEL */
+
+.panelvegetales {
+    padding-top: 20px;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.panel-titulo {
+    background: #00B16A;
+    color: #FFFFFF;
+    padding: 20px;
+}
+
+.panel-cuerpo {
+    background: #f9fafa;
+    padding: 20px;
+}
+
+.panel-cuerpo p {
+    font-size: 15px;
+}
+
+.tablas {
+    font-size: 18px;
+}
+
+.form-group {
+    padding-top: 10px;
+}
