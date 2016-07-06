@@ -109,7 +109,7 @@ function listarvegetalesagricultor($conn, $nombre){
 
 function listarvegetalesmixto($conn, $nombre, $inicial, $final){
     $sql = "SELECT u.UserFirstName as PrimerNombre, u.UserLastName as SegundoNombre, f.formularioId as id, f.fecha as fecha, a.agricultorNom as agricultor, f.Observaciones as observacion, a.agricultorUbicacion as Ubicacion, e.especieNom as Especie FROM Formulario f left join Agricultor as a on f.agricultorId = a.agricultorId left join [gam].[User] as u on u.UserName = a.UserId left join especie as e on e.especieId = f.especieId
-    where f.fecha BETWEEN '".$inicial."' AND '".$final."' AND u.UserNameSpace LIKE '%".$nombre."%'
+    where f.fecha BETWEEN '".$inicial."' AND '".$final."' AND a.UserID LIKE '%".$nombre."%'
             order by f.fecha desc";
     $result = query($conn, $sql);
     return $result;

@@ -28,18 +28,31 @@
 			    }
 			});
 		   jQuery('#vendedor_validation').validate({
-		    rules: {
-		        password: {
-		            required: true,
-		            minlength: 5
-		        },
-		        password_confirm: {
-		            required: true,
-		            minlength: 5,
-		            equalTo: "#password"
-		        }
-		    },
-		}); 
+			    rules: {
+			        password: {
+			            required: true,
+			            minlength: 5
+			        },
+			        password_confirm: {
+			            required: true,
+			            minlength: 5,
+			            equalTo: "#password"
+			        }
+			    }		    
+			}); 
+		   jQuery('#pass_validation').validate({
+			    rules: {
+			        password: {
+			            required: true,
+			            minlength: 5
+			        },
+			        password_confirm: {
+			            required: true,
+			            minlength: 5,
+			            equalTo: "#password"
+			        }
+			    }
+			});
 		   jQuery.extend(jQuery.validator.messages, {
 			  required: "Este campo es obligatorio.",
 			  remote: "Por favor, rellena este campo.",

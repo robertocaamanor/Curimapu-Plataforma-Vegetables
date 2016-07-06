@@ -1,7 +1,7 @@
 <?php
 session_start(); 
 
-    if(!isset($_SESSION['email']) && !isset($_SESSION['perfil'])) 
+    if((!isset($_SESSION['email'])) || ($_SESSION['perfil'] != 2)) 
     { 
         echo "No tienes permiso para entrar a esta pagina";
     } 
@@ -31,7 +31,7 @@ include 'includes/header.php';
                         <div class="form-group">
                             <label for="telefono">Telefono</label>
                             <input type="text" name="telefono" id="telefono" class="form-control"
-                                   placeholder="Ingrese telefono" required>
+                                   placeholder="Ingrese telefono">
                         </div>
                     </div>
                 </div>

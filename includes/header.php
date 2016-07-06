@@ -88,6 +88,7 @@
         <?php if($_SESSION['perfil'] != 4) { ?>
         <li><a href="mapa.php"><span class="glyphicon glyphicon-map-marker"></span> Mapa</a></li>
         <?php } ?>
+        <li><a href="cambiarpassword.php"><span class="glyphicon glyphicon-pencil"></span> Cambiar contraseña</a></li>
         <li><a href="logout.php"><span class="glyphicon glyphicon-exclamation-sign"></span> Salir</a></li>
     </ul>
 </div>

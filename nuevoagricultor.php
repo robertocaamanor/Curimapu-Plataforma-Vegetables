@@ -1,7 +1,7 @@
 <?php
 session_start(); 
 
-    if(!isset($_SESSION['email'])) 
+    if((!isset($_SESSION['email'])) || ($_SESSION['perfil'] != 2)) 
     { 
 
         echo "No tienes permiso para entrar a esta pagina"; 
@@ -78,7 +78,7 @@ include 'src/functions/dbfunctions.php';
                                   // Aquí recorres los datos recibidos:
                                   while ($temp = mssql_fetch_array($sql))
                                   {
-                                    print" <option value='".$temp["UserName"]."'>".$temp["UserName"]."</option>\n";
+                                    print" <option value='".$temp["UserName"]."'>".$temp["UserFirstName"]." ".$temp["UserLastName"]."</option>\n";
                                   }
 
                                   echo"  </select>\n";

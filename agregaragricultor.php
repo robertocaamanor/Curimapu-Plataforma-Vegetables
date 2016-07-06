@@ -23,6 +23,8 @@
 		}else{
 		      echo"No Agregado";
 		}
+		echo "<br><br>Sera redirigido en algunos segundos...";
+    	echo "<META HTTP-EQUIV='refresh' CONTENT='5; URL=nuevoagricultors.php'>";
 	}
 
 	include 'includes/footer.php';

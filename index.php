@@ -64,6 +64,7 @@ include 'src/functions/dbfunctions.php';
 </form>
 
 <div class="footer-form">
+    <a class="label label-default" href="validaremail.php">¿Olvidó su contraseña?</a><br><br>
     <p>Desarrollado por XHOST</p>
 </div>
 <script src="js/jquery.min.js"></script>

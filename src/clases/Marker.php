@@ -175,7 +175,7 @@ class Marker
                     from formulario f
                     left join agricultor as a on f.agricultorId = a.agricultorId
                     left join [gam].[User] as u on u.UserName = a.UserId
-                    where f.fecha BETWEEN '".$inicio."' AND '".$final."' AND u.UserNameSpace LIKE '%".$nombrevendedor."%'");
+                    where f.fecha BETWEEN '".$inicio."' AND '".$final."' AND u.UserID LIKE '%".$nombrevendedor."%'");
             $conn = connectDB();
             $result = query($conn,$sql);
 
